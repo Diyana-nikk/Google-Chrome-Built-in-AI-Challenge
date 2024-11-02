@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Language Detection Extension",
+    "version": "1.0",
+    "description": "Detects the language of selected text using Google's Language Detection API.",
+    "permissions": [
+      "activeTab"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    },
+    "host_permissions": [
+      "*://*/*"
+    ]
+  }  
